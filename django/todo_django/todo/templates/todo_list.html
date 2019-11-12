@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}  Listado de teras {% endblock %} 
+
+{% block body %} 
+<h1>Lista de tareas</h1>
+
+<ul>
+
+    {% for x in todo_list %}
+    
+
+
+    <li>{{x.discription}}</li>
+    <li>{{x.fecha}}</li>
+    <li>{{x.unidades}}</li>
+
+    {% endfor %}
+
+</ul>
+
+{% endblock %} 
+
+
